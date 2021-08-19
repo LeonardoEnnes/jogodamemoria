@@ -1,0 +1,44 @@
+body{
+    font-family: 'Righteous', sans-serif;
+}
+
+.card{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform-style: preserve-3d;
+    transition: transform .5s;
+}
+
+.card-Back ,.card-Front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 21px;
+    box-shadow: 10px 10px 10px rgba(0, 0,0, 0.44);
+    backface-visibility: hidden;
+}
+
+.flip{
+    transform: rotateY(180deg);
+}
+
+.card-Front{
+    transform: rotateY(180deg);
+    background-color: #101c2c;
+}
+
+
+.card-Back{
+    background-color:  #05c3ff;
+    color: #101c2c;
+    font-size: 30px;
+    /* display: none; */
+}
+
+.icon{
+    width: 100px;
+}
