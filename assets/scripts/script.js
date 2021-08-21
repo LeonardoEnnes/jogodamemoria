@@ -6,4 +6,4 @@ function handleClick() {
 
 card.addEventListener('click', handleClick);
 
-
+ 
